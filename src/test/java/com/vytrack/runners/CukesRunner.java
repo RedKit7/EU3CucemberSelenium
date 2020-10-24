@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",
         dryRun = false,
-        tags = "@navigate",
+        tags = "@login",
           strict = true
       //  tags = "@driver or @VYT-123"
         //  tags = "@driver and not @VYT-123"
