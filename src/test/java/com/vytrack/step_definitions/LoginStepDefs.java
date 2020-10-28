@@ -4,17 +4,14 @@ import com.vytrack.pages.LoginPage;
 import com.vytrack.utilities.BrowserUtils;
 import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
-import com.vytrack.utilities.ExcelReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class LoginStepDefs {
 
-    ExcelReader excelReader;
+
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() throws InterruptedException {
@@ -27,8 +24,7 @@ public class LoginStepDefs {
     @When("the user enters the driver information")
     public void the_user_enters_the_driver_information() throws InterruptedException {
 
-        excelReader = new ExcelReader("src/test/resources/ExcelFile.xlsx");
-        excelReader.addColumn("SheetDeneme", "Password");
+
         System.out.println("excelFileModified");
 
         String username = ConfigurationReader.get("driver_username");
