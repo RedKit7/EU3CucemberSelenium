@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",
         dryRun = false,
-        tags = "@smoke",
-          strict = true
+        tags = "@wip",
+        strict = true
       //  tags = "@driver or @VYT-123"
         //  tags = "@driver and not @VYT-123"
 
